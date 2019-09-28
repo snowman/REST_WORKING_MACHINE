@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 // Build audio files
-// say --rate="200" --voice="Samantha" 'DAMN it, Get out of work NOW!!!' -o Get_Out_Of_Work.aiff
-// say --rate="200" --voice="Samantha" 'Hey! Get back to work!!!' -o Get_Back_To_Work.aiff
+// say --rate="200" --voice="Samantha" 'DAMN it, Get out, out, out of work NOW!!!' -o Get_Out_Of_Work.aiff
+// say --rate="200" --voice="Samantha" 'Hey! Get back, back, back to work!!!' -o Get_Back_To_Work.aiff
 
 // TODO: Add progress bar
 
