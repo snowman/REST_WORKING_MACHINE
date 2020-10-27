@@ -1,11 +1,5 @@
 #!/usr/bin/env node
 
-// Build audio files
-// say --rate="200" --voice="Samantha" 'DAMN it, Get out, out, out of work NOW!!!' -o Get_Out_Of_Work.aiff
-// say --rate="200" --voice="Samantha" 'Hey! Get back, back, back to work!!!' -o Get_Back_To_Work.aiff
-
-// TODO: Add progress bar
-
 // milliseconds
 const minutes = minute => minute * 60 * 1000
 
@@ -14,6 +8,7 @@ const REST_TIME = minutes(1)
 
 const { exec } = require('child_process')
 
+const start_working = () => exec(`mpv "${__dirname}/Start_To_Work.aiff"`)
 const get_out_of_work = () => exec(`mpv "${__dirname}/Get_Out_Of_Work.aiff"`)
 const get_back_to_work = () => exec(`mpv "${__dirname}/Get_Back_To_Work.aiff"`)
 
@@ -28,4 +23,5 @@ const REST_TIMER = () => {
   setTimeout(WORK_TIMER, WORK_TIME)
 }
 
+start_working()
 setTimeout(WORK_TIMER, WORK_TIME)
